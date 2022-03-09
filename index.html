@@ -151,7 +151,12 @@
             <a href="#" target="_blank">Terms</a>
             <a href="#" target="_blank">Contact</a>
           </div>
-          <p id="copyright">&copy; 2021 Jhonathan Angus</p>
+          <p id="copyright">&copy; <span></span> Jhonathan Angus</p>
         </footer>
+        <script>
+          // set current year in footer
+          const footerSpan = document.querySelector('#copyright span');
+          footerSpan.textContent = new Date().getFullYear();
+        </script>
 </body>
 </html>
